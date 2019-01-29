@@ -23,15 +23,15 @@
       $(document).ready(function () {
 
         $('#main_content').headsmart();
-            var date = new Date('June 23 2019 17:30:00').getTime();
-            var now = new Date().getTime();
-            var diff = date/1000 - now/1000;
-            clock = $('#ateeqnikahclock').FlipClock(diff, {
-                      clockFace: 'DailyCounter',
-                      countdown: true,
-                      height : '100%',
-                      width : '50%'
-                  });
+        var date = new Date('June 23 2019 17:30:00').getTime();
+        var now = new Date().getTime();
+        var diff = date/1000 - now/1000;
+        clock = $('#ateeqnikahclock').FlipClock(diff, {
+                  clockFace: 'DailyCounter',
+                  countdown: true,
+                  height : '100%',
+                  width : '50%'
+              });
 
         
       })
@@ -59,16 +59,18 @@
 
       <span class="banner-fix"></span>
 
+      <div id="ateeqnikahclock" class="skipthis" style="margin:2em; width: 1024px; z-index: 2; "></div>
       <section id="main_content">
         <!-- Display the countdown timer in an element -->        
-          <div id="ateeqnikahclock" class="skipthis" style="margin:2em; width: 1024px"></div>
-          <img src="images/wedding_card.png">
+        
+          <div><img src="images/wedding_card.png"></div>          
       </section>
 
       <footer>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <p>Thats all for now... Thank Ya..</a></p>
+            <p>Thats all for now... Thank You :)..<!-- <br>Drop some cash here My GPay UPI ID: ahmedateeq64@okhdfcbank Thanks :D --></p>
+            <!-- <img src="images/gpay-code.png"/> -->
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
