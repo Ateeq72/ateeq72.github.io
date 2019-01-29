@@ -26,9 +26,11 @@
         var date = new Date(2019, 6, 23, 17, 30, 00);
             var now = new Date();
             var diff = (date.getTime()/1000) - (now.getTime()/1000);
-                      clock = $('#clock').FlipClock(diff, {
+                      clock = $('#ateeqnikahclock').FlipClock(diff, {
                       clockFace: 'DailyCounter',
-                      countdown: true
+                      countdown: true,
+                      height : '100%',
+                      width : '50%'
                   });
 
         
@@ -59,7 +61,7 @@
 
       <section id="main_content">
         <!-- Display the countdown timer in an element -->        
-          <div id="clock" style="margin:2em; width: 1024px"></div>
+          <div id="ateeqnikahclock" class="skipthis" style="margin:2em; width: 1024px"></div>
           <img src="images/wedding_card.png">
       </section>
 

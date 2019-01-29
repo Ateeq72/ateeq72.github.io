@@ -405,12 +405,12 @@ ol {
   padding-left: 1.35em;
 }
 
-ul {
+ul :not(:skipthis){
   margin: .7em 0;
   padding-left: 1.35em;
 }
 
-ul li {
+ul li :not(:skipthis) {
   padding-left: 10px;
   background: transparent url(../images/chevron.png) left 6px no-repeat;
 }
