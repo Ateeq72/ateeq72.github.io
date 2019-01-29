@@ -115,7 +115,7 @@ body {
   font: normal normal 30px/1.5 Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif;
 }
 
-ul li {
+ul li :not(:skipthis) {
   padding-left: 20px;
   background: transparent url(../images/chevron-2x.png) left 15px no-repeat;
 }
