@@ -8,27 +8,41 @@
     <link rel="stylesheet" href="stylesheets/core.css" media="screen">
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
     <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="stylesheets/flipclock.css">
 
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script src="javascripts/flipclock.min.js"></script>	
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    
     <script type="text/javascript">
+
+      var clock;
+
       $(document).ready(function () {
+
         $('#main_content').headsmart()
+        
+        clock = $('.clock').FlipClock(3600 * 24 * 3, {
+          clockFace: 'DailyCounter',
+          countdown: true
+        });
+
+        clock.setCountdown(true);
+        
       })
     </script>
-    <title>Ateeq72&#39;s &lt;&lt;GitHub Pages&gt;&gt; by Ateeq72</title>
+    <title>Ateeq & Asma&#39;s &lt;&lt;Nikah&gt;&gt;</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/Ateeq72">View on GitHub</a>
     <div class="shell">
 
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>Ateeq72&#39;s &lt;&lt;GitHub Pages&gt;&gt;</h1>
-            <h2>A Geeks WebPage</h2>
+            <h1>Ateeq & Asma&#39;s <br>&lt;&lt;Nikah&gt;&gt;</h1>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -45,17 +59,17 @@
 
 
       <section id="main_content">
+        <!-- Display the countdown timer in an element -->
+          <div class="clock" style="margin:2em; width: 1024px"></div>
+          <img src="images/wedding_card.png">
         <h3>
-<a id="welcome-to-ateeq72s-github-pages" class="anchor" href="#welcome-to-ateeq72s-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Ateeq72's GitHub Pages.</h3>
 
-<p>Yet to decide how to make use of this site.... So!. Hold on.. :)</p>
-        <p>Added <a href="/subdir/subsite1.html">SubSite</a> for Test Strangely it Works :D </p>
       </section>
 
       <footer>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/Ateeq72">Ateeq72</a> can be found on <a href="https://github.com/Ateeq72">GitHub</a></p>
+            <p>Thats all for now... Thank Ya..</a></p>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
