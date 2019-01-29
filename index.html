@@ -14,7 +14,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <script src="javascripts/flipclock.min.js"></script>	
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  
     
     <script type="text/javascript">
 
@@ -22,11 +22,11 @@
 
       $(document).ready(function () {
 
-        $('#main_content').headsmart()
+        $('#main_content').headsmart();
         var date = new Date(2019, 6, 23, 17, 30, 00);
             var now = new Date();
             var diff = (date.getTime()/1000) - (now.getTime()/1000);
-                      clock = $('.clock').FlipClock(diff, {
+                      clock = $('#clock').FlipClock(diff, {
                       clockFace: 'DailyCounter',
                       countdown: true
                   });
@@ -34,7 +34,7 @@
         
       })
     </script>
-    <title>Ateeq & Asma&#39;s &lt;&lt;Nikah&gt;&gt;</title>
+    <title>Ateeq & Asma&#39;s Nikah</title>
   </head>
 
   <body>
@@ -43,7 +43,7 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>Ateeq & Asma&#39;s <br>&lt;&lt;Nikah&gt;&gt;</h1>
+            <h1>Ateeq & Asma&#39;s <br> Nikah </h1>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -55,16 +55,12 @@
         </span>
       </div>
 
-
       <span class="banner-fix"></span>
 
-
       <section id="main_content">
-        <!-- Display the countdown timer in an element -->
-          <div class="clock" style="margin:2em; width: 1024px"></div>
+        <!-- Display the countdown timer in an element -->        
+          <div id="clock" style="margin:2em; width: 1024px"></div>
           <img src="images/wedding_card.png">
-        <h3>
-
       </section>
 
       <footer>
