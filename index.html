@@ -23,10 +23,10 @@
       $(document).ready(function () {
 
         $('#main_content').headsmart();
-        var date = new Date(2019, 6, 23, 17, 30, 00);
-            var now = new Date();
-            var diff = (date.getTime()/1000) - (now.getTime()/1000);
-                      clock = $('#ateeqnikahclock').FlipClock(diff, {
+            var date = new Date('June 23 2019 17:30:00').getTime();
+            var now = new Date().getTime();
+            var diff = date/1000 - now/1000;
+            clock = $('#ateeqnikahclock').FlipClock(diff, {
                       clockFace: 'DailyCounter',
                       countdown: true,
                       height : '100%',
